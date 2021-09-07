@@ -1,38 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 10px 0 0 10px;
+  height: fit-content;
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(to right, #41295a, #2f0743);
+}
+
+.heading {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0px;
+  color: azure;
+}
+
+.logo {
+  max-width: 120px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  margin-left: 1%;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 35px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(65, 41, 90, 0.9),
+    rgba(47, 7, 67, 0.9)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(2px);
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"] {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-box {
+  height: 40px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-button {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 30px 0 30px;
+  font-size: 15px;
+  border: none;
+  color: azure;
+  background-image: linear-gradient(
+    to top,
+    #a7a6cb 0%,
+    #8989ba 52%,
+    #8989ba 100%
+  );
+  margin-left: 5px;
+}
+
+.search-button img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container img {
+  max-width: 20%;
+  max-height: 20%;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
 }
